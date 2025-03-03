@@ -1,4 +1,4 @@
-# CL for basic setup
+# CL for basic setup (Bookworm 12)
 ### sudo right
 check the if the user within the sudo user group
 ```
@@ -41,7 +41,8 @@ Run the isnatller
 cd /mnt/cdrom
 sudo sh ./VBoxLinuxAdditions.run
 ```
-### Restart the VM
+restart the VM
 ```
 sudo reboot
 ```
+Under "Devices" setup the shared folders, set bidirectional to both "Shared Clipboard" and "Drag and Drop". Then select "Insert Guest Addtional CD Image" and then "Upgrade Guest Addtions"
