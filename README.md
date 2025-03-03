@@ -45,4 +45,14 @@ restart the VM
 ```
 sudo reboot
 ```
-Under "Devices" setup the shared folders, set bidirectional to both "Shared Clipboard" and "Drag and Drop". Then select "Insert Guest Addtional CD Image" and then "Upgrade Guest Addtions"
+- Under "Devices", set bidirectional to both "Shared Clipboard" and "Drag and Drop". Then select "Insert Guest Addtional CD Image" and then "Upgrade Guest Addtions".
+- Under "Devices", create and mount the shared folder, if the folder isnt accessible after setup, follow the instruction bewlow
+- check if "vboxsf" is listed in the group
+```
+groups
+```
+- if not, add the group manualy
+```
+sudo usermod -aG vboxsf $USER
+```
+- reboot the VM and login to recheck the groups
